@@ -16,7 +16,7 @@
     <script>
         document.getElementById("buyButton").addEventListener("click", async () => {
             try {
-                const response = await fetch("/checkout-session", { method: "POST" });
+                const response = await fetch("https://blackwolfhubkey.onrender.com/checkout-session", { method: "POST" });
                 const data = await response.json();
                 if (data.url) {
                     window.location.href = data.url; // Redirect to Stripe checkout
