@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Script Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buy Our Premium Script Hub</h1>
+        <p>Get access to the best Roblox scripts!</p>
+        <button id="buyButton">Buy Now</button>
+    </div>
+
+    <script>
+        document.getElementById("buyButton").addEventListener("click", async () => {
+            try {
+                const response = await fetch("/checkout-session", { method: "POST" });
+                const data = await response.json();
+                if (data.url) {
+                    window.location.href = data.url; // Redirect to Stripe checkout
+                } else {
+                    alert("Error creating checkout session!");
+                }
+            } catch (error) {
+                console.error("Error:", error);
+                alert("Failed to start checkout.");
+            }
+        });
+    </script>
+</body>
+</html>
