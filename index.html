@@ -3,14 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy Script Hub</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Buy BlackWolf's Hub Script</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-image: url('PLACEHOLDER-FOR-YOUR-BACKGROUND-IMAGE.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            min-height: 100vh;
+            color: #fff;
+            overflow-y: auto;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+            max-width: 450px;
+            width: 100%;
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: #fff;
+            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #0f9b0f, #28a745);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        p {
+            font-size: 1.3rem;
+            color: #ddd;
+            margin-bottom: 30px;
+            line-height: 1.5;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        .features {
+            text-align: left;
+            color: #28a745;
+            font-size: 1.2rem;
+            margin-top: 40px;
+        }
+
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features li {
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: #fff;
+            font-size: 1.6rem;
+            padding: 18px 45px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.6);
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background-color: #218838;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.7);
+        }
+
+        button:active {
+            background-color: #1e7e34;
+            transform: translateY(1px);
+            box-shadow: 0 3px 10px rgba(40, 167, 69, 0.5);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #888;
+        }
+
+        footer p {
+            opacity: 0.8;
+        }
+
+        .disclaimer {
+            font-size: 1.1rem;
+            color: #ffcc00;
+            margin-top: 30px;
+            line-height: 1.5;
+        }
+
+        .testimonials {
+            margin-top: 40px;
+            color: #fff;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            opacity: 0.8;
+        }
+
+        .container {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
+
     <div class="container">
-        <h1>Buy Our Premium Script Hub</h1>
-        <p>Get access to the best Roblox scripts!</p>
+        <h1>BlackWolf's Hub Script</h1>
+        <p>Unlock powerful features and enhance your Roblox experience with BlackWolf's premium scripts. Get started now!</p>
         <button id="buyButton">Buy Now</button>
+
+        <div class="features">
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Maximize game manipulation</li>
+                <li>Bypass game limits and restrictions</li>
+                <li>Precisely replicate native game code</li>
+                <li>Minimized detection risks, making bans highly unlikely</li>
+                <li>Frequent updates and a user-friendly interface</li>
+            </ul>
+        </div>
+
+        <div class="features">
+            <h3>Supported Game:</h3>
+            <ul>
+                <li>Creatures of Sonaria</li>
+            </ul>
+        </div>
+
+        <div class="disclaimer">
+            <p>Any game bans related to this script are not our responsibility. No refunds accepted.</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 BlackWolf Hub. All Rights Reserved.</p>
+        </footer>
     </div>
 
     <script>
@@ -29,5 +198,6 @@
             }
         });
     </script>
+
 </body>
 </html>
